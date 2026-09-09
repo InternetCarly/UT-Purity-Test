@@ -1,0 +1,59 @@
+/**hello bro*/
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Purity Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1>The Purity Test</h1>
+            <p class="tagline">100 questions. No judgment. Just honesty.</p>
+        </header>
+
+        <div class="score-card" id="score-card">
+            <div class="score-display">
+                <span class="score-number" id="score">100</span>
+                <span class="score-denom">/ 100</span>
+            </div>
+            <div class="score-bar-track">
+                <div class="score-bar-fill" id="score-bar"></div>
+            </div>
+            <p class="score-status" id="score-status">Check off everything you've done to see your score.</p>
+        </div>
+
+        <p class="instructions">
+            Check all that apply. Your score starts at <strong>100</strong> and drops by 1 for each item you've done.
+            A lower score means you've lived more. No wrong answers.
+        </p>
+
+        <div id="questions-container"></div>
+
+        <div class="action-bar">
+            <button class="btn btn-primary" id="btn-results">View My Results</button>
+            <button class="btn btn-ghost" id="btn-reset">Start Over</button>
+        </div>
+
+        <section class="results-panel" id="results-panel" aria-hidden="true">
+            <div class="results-score-wrap">
+                <span class="result-number" id="result-number">100</span>
+                <span class="result-out-of">/ 100</span>
+            </div>
+            <div class="result-badge" id="result-badge"></div>
+            <p class="result-desc" id="result-desc"></p>
+            <p class="result-note">Everything calculated right here in your browser. Nothing stored, nothing shared.</p>
+        </section>
+
+        <footer class="site-footer">
+            <p>For entertainment purposes only. All responses remain completely private.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
