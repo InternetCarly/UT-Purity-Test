@@ -131,7 +131,7 @@ abbr {
 
 .score-number {
     display: inline-block;
-    margin-left: 8px;
+    margin-top: 8px;
     font-size: 2.4rem;
     line-height: 1;
     color: #c0392b;

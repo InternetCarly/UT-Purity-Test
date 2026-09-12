@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (resultBox) {
-            resultBox.innerHTML = `Your Score: <span class="score-number">${score}</span>`;
+            resultBox.innerHTML = `Your Score:<br><span class="score-number">${score}</span>`;
             resultBox.style.display = 'block';
             resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
