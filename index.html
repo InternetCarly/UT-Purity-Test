@@ -1,59 +1,179 @@
-/**hello bro*/
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Purity Test</title>
+    <title>The Rice Purity Test</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="prefetch" href="/score.html" as="document">
 </head>
+
 <body>
-    <div class="container">
-        <header class="site-header">
-            <h1>The Purity Test</h1>
-            <p class="tagline">100 questions. No judgment. Just honesty.</p>
-        </header>
-
-        <div class="score-card" id="score-card">
-            <div class="score-display">
-                <span class="score-number" id="score">100</span>
-                <span class="score-denom">/ 100</span>
-            </div>
-            <div class="score-bar-track">
-                <div class="score-bar-fill" id="score-bar"></div>
-            </div>
-            <p class="score-status" id="score-status">Check off everything you've done to see your score.</p>
-        </div>
-
-        <p class="instructions">
-            Check all that apply. Your score starts at <strong>100</strong> and drops by 1 for each item you've done.
-            A lower score means you've lived more. No wrong answers.
+    <div id="page-wrap">
+        <p class="intro-block">
+            <a href="https://texastravesty.com" class="travesty-logo" aria-label="Texas Travesty Website">
+                <img src="Assets/the official ut purity test.png" alt="The Official UT Purity Test" style="display:block; max-width:100%; height:auto;">
+            </a>
         </p>
 
-        <div id="questions-container"></div>
+        <div id="main-content">
+        <p class="intro-text">
+            <em>
+                (we need to change this, come up with something funny and UT related)<br>
+                The Purity Test has historically served as a segue from O-week to true college life at the University of Texas.<br>
+                It's a voluntary opportunity for O-week groups to bond, and for students to track the maturation<br>
+                of their experiences throughout college.
+            </em>
+        </p>
 
-        <div class="action-bar">
-            <button class="btn btn-primary" id="btn-results">View My Results</button>
-            <button class="btn btn-ghost" id="btn-reset">Start Over</button>
+        <p class="warning-text">
+            <strong>Caution: This is not a bucket list. Completion of all items on this test will likely result in death. <br>
+                 (We can change this, too.)</strong>
+        </p>
+
+        <p class="instruction-line quiz-only">
+            Click on every item you have done.
+            <abbr title="Member of the Preferred Sex">MPS</abbr> stands for Member of the Preferred Sex.
+        </p>
+
+        <div id="list">
+            <div id="quiz-body" class="quiz-only">
+            <ol>
+
+                <li><label><input type="checkbox"> Blacked out on 6th Street?</label></li>
+                <li><label><input type="checkbox"> Drank under the age of 21?</label></li>
+                <li><label><input type="checkbox"> Farted in class?</label></li>
+                <li><label><input type="checkbox"> Taken furniture from the dumpster?</label></li>
+                <li><label><input type="checkbox"> Responded to someone’s graffiti on the bathroom walls?</label></li>
+                <li><label><input type="checkbox"> Taken a picture of the UT balls where the tower looks like the penis?</label></li>
+                <li><label><input type="checkbox"> Made out or more in Jester?</label></li>
+                <li><label><input type="checkbox"> Been yelled at by the crossing guard across from the littlefield house?</label></li>
+                <li><label><input type="checkbox"> Engaged in freshman-senior coitus (as either the freshman or the senior)?</label></li>
+                <li><label><input type="checkbox"> Ridden the bull at Wild Greg’s?</label></li>
+                <li><label><input type="checkbox"> Ridden a camel at the Israel block party?</label></li>
+                <li><label><input type="checkbox"> Ridden Big Red?</label></li>
+                <li><label><input type="checkbox"> Given or received a roofie at a frat party?</label></li>
+                <li><label><input type="checkbox"> Given or received oral sex to/from someone with a shag haircut?</label></li>
+                <li><label><input type="checkbox"> Dated a grad student who had a large dildo in his shower when you were a freshman?</label></li>
+                <li><label><input type="checkbox"> Taken nutrition?</label></li>
+                <li><label><input type="checkbox"> Engaged in a DFMO (Dance Floor Makeout) with an MPS?</label></li>
+                <li><label><input type="checkbox"> Been to Tuesgays?</label></li>
+                <li><label><input type="checkbox"> Smoked weed before noon?</label></li>
+                <li><label><input type="checkbox"> Been drunk in class?</label></li>
+                <li><label><input type="checkbox"> Had dorm sex?</label></li>
+                <li><label><input type="checkbox"> Transferred or CAP’d?</label></li>
+                <li><label><input type="checkbox"> Q-Dropped a class?</label></li>
+                <li><label><input type="checkbox"> Been to a frat party?</label></li>
+                <li><label><input type="checkbox"> Been to a Co-op party?</label></li>
+                <li><label><input type="checkbox"> Publically urinated?</label></li>
+                <li><label><input type="checkbox"> Purchased a Fake ID?</label></li>
+                <li><label><input type="checkbox"> Kissed your homie for a free TV?</label></li>
+                <li><label><input type="checkbox"> Had to do a coloring sheet for a class?</label></li>
+                <li><label><input type="checkbox"> Hooked up with a guy with a “Saturdays are for the Boys,” banner?</label></li>
+                <li><label><input type="checkbox"> “Dated” a co-op DJ?</label></li>
+                <li><label><input type="checkbox"> Named your borg, “JP Borgan, Playborg Carti, or Borgasm.”?</label></li>
+                <li><label><input type="checkbox"> Had a thing with a campus ambassador?</label></li>
+                <li><label><input type="checkbox"> Downloaded and deleted Hinge?</label></li>
+                <li><label><input type="checkbox"> Fallen on campus during a passing period?</label></li>
+                <li><label><input type="checkbox"> Got your period, and it was burnt orange?</label></li>
+                <li><label><input type="checkbox"> Been rejected from a spirit org, business frat, or one of the following miscellaneous orgs (Beevo Beekeeping, Longhorn Racing, ADD MORE)?</label></li>
+                <li><label><input type="checkbox"> Had gay sex with a DL frat guy?</label></li>
+                <li><label><input type="checkbox"> Took a first date to the turtle pond?</label></li>
+                <li><label><input type="checkbox"> Visited the glory hole at 26 West?</label></li>
+                <li><label><input type="checkbox"> Purchased any item from the Glassmith?</label></li>
+                <li><label><input type="checkbox"> Been in the background of a Natalie Tran TikTok?</label></li>
+                <li><label><input type="checkbox"> Ran into your situationship at Calamity’s Coffee?</label></li>
+                <li><label><input type="checkbox"> Won free burrito Friday (has anyone actually won this?)</label></li>
+                <li><label><input type="checkbox"> Jay-walked in front of a Waymo?</label></li>
+                <li><label><input type="checkbox"> Tripped and fell at Tweedy’s?</label></li>
+                <li><label><input type="checkbox"> Gotten your car towed from your own apartment’s parking lot?</label></li>
+                <li><label><input type="checkbox"> Tabled on speedway?</label></li>
+                <li><label><input type="checkbox"> Talked to someone tabling on speedway?</label></li>
+                <li><label><input type="checkbox"> Crossed the road on rainbet?</label></li>
+                <li><label><input type="checkbox"> Claimed your football ticket on 3+ devices then left during halftime?</label></li>
+                <li><label><input type="checkbox"> Cheated on honor lock?</label></li>
+                <li><label><input type="checkbox"> Touched yourself under the covers while your dorm-mate was sleeping?</label></li>
+                <li><label><input type="checkbox"> Ran into a hinge match at Cables?</label></li>
+                <li><label><input type="checkbox"> Ran into 3+ hinge matches at Cables on the same night?</label></li>
+                <li><label><input type="checkbox"> Changed your major?</label></li>
+                <li><label><input type="checkbox"> Flirted with a teacher for a better grade?</label></li>
+                <li><label><input type="checkbox"> Been to the Kinsolving hot cookie bar?</label></li>
+                <li><label><input type="checkbox"> Stood in line for a speedway popup?</label></li>
+                <li><label><input type="checkbox"> Witnessed a couple having a difficult conversation on a west-campus bench?</label></li>
+                <li><label><input type="checkbox"> Had a difficult conversation on a west-campus bench?</label></li>
+                <li><label><input type="checkbox"> Needed to download an app for a frat party?</label></li>
+                <li><label><input type="checkbox"> Lived underneath the basketball court at Union on 24th and they never gave you a rent concession?</label></li>
+                <li><label><input type="checkbox"> Left a bad Google review on your wampus apartment and then the staff is really bitchy to you for the rest of the year?</label></li>
+                <li><label><input type="checkbox"> Left a good review for a shitty wampus apartment you don’t live in after you only went on the tour because your integrity can be bought by a raffle?</label></li>
+                <li><label><input type="checkbox"> Painted a brown butcher paper banner for a party?</label></li>
+                 <li><label><input type="checkbox"> ?</label></li> 
+                <li><label><input type="checkbox"> Had no water or had abundance of water in your wampus apartment?</label></li>
+                <li><label><input type="checkbox"> Hit on/been hit on by your TA?</label></li>
+                <li><label><input type="checkbox"> Gone to office hours with an overly flirtatious professor?</label></li>
+                <li><label><input type="checkbox"> Been forced to go to the Writing Center?</label></li>
+                <li><label><input type="checkbox"> Been hit by a scooter/bike on speedway?</label></li>
+                <li><label><input type="checkbox"> Felt personally victimized by the Texas Travesty on speedway?</label></li>
+                <li><label><input type="checkbox"> Read more than the headline on a Texas Travesty article?</label></li>
+                <li><label><input type="checkbox"> Used the word “jizza”?</label></li>
+                <li><label><input type="checkbox"> Taken a shit in the Welch bathrooms?</label></li>
+                <li><label><input type="checkbox"> Select this if you haven’t been to West Fest. You deserve a reward.</label></li>
+                <li><label><input type="checkbox"> Been to a religious frat’s party?</label></li>
+                <li><label><input type="checkbox"> Hit at least 10 Yakarma?</label></li>
+                <li><label><input type="checkbox"> Joined a run club?</label></li>
+                <li><label><input type="checkbox"> Exclaimed, “There’s Bevo Hat guy!” at a football game?</label></li>
+                <li><label><input type="checkbox"> Gone inside the church of Scientology for any reason?</label></li>
+                <li><label><input type="checkbox"> Bought something from GlassSmith?</label></li>
+                <li><label><input type="checkbox"> From out of state? (You’re impure)</label></li>
+                <li><label><input type="checkbox"> Hooked up with someone on your dorm floor?</label></li>
+                <li><label><input type="checkbox"> Changed your gender?</label></li>
+                <li><label><input type="checkbox"> Took a shit in the PMA/Welch/Union?</label></li>
+                <li><label><input type="checkbox"> Tried to join a race-based org that you are visibly not a part of?</label></li>
+                <li><label><input type="checkbox"> Did a multiple round interview to get into an org?</label></li>
+                <li><label><input type="checkbox"> Unironically used the phrase “Keep Austin Weird”?</label></li>
+                <li><label><input type="checkbox"> Pulled trig in a public restroom?</label></li>
+                <li><label><input type="checkbox"> Cold plunged at Barton Springs?</label></li>
+                <li><label><input type="checkbox"> Participated in the Pluckers challenge?</label></li>
+                <li><label><input type="checkbox"> Sat through an Arrows of Christ meeting?</label></li>
+                <li><label><input type="checkbox"> Been approached by a religiously affiliated organization?</label></li>
+                <li><label><input type="checkbox"> Engaged in Bevostiality?</label></li>
+                <li><label><input type="checkbox"> Joined the Texas Travesty?</label></li>
+            </ol>
+
+            <div class="button-row">
+                <input class="button" id="submit" type="submit" value="Calculate My Score!">
+                <input class="button" id="reset" type="submit" value="Clear checkboxes">
+            </div>
+            </div>
+
+            <div id="score-result" aria-live="polite"></div>
+
+            <div id="thank-you-message">
+                <p>Thank you for your submission!</p>
+                <p>The UT Purity test was created by the <a href="https://texastravesty.com" target="_blank" rel="noopener noreferrer">Texas Travesty</a> newspaper at the University of Texas. <br>
+                    The original one was by the Rice Thresher at Rice University, but who cares?</p>
+            </div>
+
+            <div class="privacy-link">
+                <a href="/privacy/" id="privacy-policy-link">Privacy Policy</a>
+            </div>
+        </div>
         </div>
 
-        <section class="results-panel" id="results-panel" aria-hidden="true">
-            <div class="results-score-wrap">
-                <span class="result-number" id="result-number">100</span>
-                <span class="result-out-of">/ 100</span>
+        <div id="privacy-view" hidden>
+            <div class="privacy-box">
+                <h2 class="privacy-title">Privacy Policy</h2>
+                <p>Answers are completely anonymous and cannot and will not be used against you in the court of law. We don't actually collect your data, by the way. If you go on the Official Rice Purity test website, they actually do store your data and use it for &ldquo;statistical analysis, research, and educational insights.&rdquo; I'm not even kidding. You can <a href="https://ricepuritytest.com/privacy/" target="_blank" rel="noopener noreferrer">read it for yourself</a>.</p>
+                <p>Hi, I'm Carly by the way, I'm the web developer for the Travesty. I hope you enjoyed taking this test. I pinky-dinky-triple-dog-promise you I'm not going to send your information to your mom or your crush or your hot TA. I would never do anything to hurt you. I love you.</p>
+                <img src="Assets/FRIED_IMAGE.png" alt="" class="privacy-image">
             </div>
-            <div class="result-badge" id="result-badge"></div>
-            <p class="result-desc" id="result-desc"></p>
-            <p class="result-note">Everything calculated right here in your browser. Nothing stored, nothing shared.</p>
-        </section>
-
-        <footer class="site-footer">
-            <p>For entertainment purposes only. All responses remain completely private.</p>
-        </footer>
+            <p class="privacy-back">
+                <a href="#" id="privacy-back-link">&larr; Back to the test</a>
+            </p>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
