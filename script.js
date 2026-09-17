@@ -5,10 +5,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultBox = document.getElementById('score-result');
     const thankYouMessage = document.getElementById('thank-you-message');
     const quizOnlyElements = Array.from(document.querySelectorAll('.quiz-only'));
+    const introText = document.querySelector('.intro-text');
+    const originalIntroHTML = introText ? introText.innerHTML : '';
 
     function calculateScore() {
         const done = checkboxes.filter((box) => box.checked && !box.disabled).length;
         return 100 - done;
+    }
+
+    function getScoreMessage(score) {
+        if (score >= 90) {
+            return 'Awwww look at you. You’re so cute! Between your two-parent household and your religious background, you’ve really maintained a purity like nobody else. Good luck with the next Papal election!';
+        }
+        if (score >= 73) {
+            return 'You’re not a very fun hang, but that’s okay. Everybody still wants you around because you have a steady presence and a submissive attitude. I just know you’d be dropping that soap on purpose in prison!';
+        }
+        if (score >= 50) {
+            return 'A perfectly quaint score! Your angel and devil are always fighting, and after dying you will certainly go to purgatory. Nothing is particularly special about you, except for your mixed political opinions.';
+        }
+        if (score >= 30) {
+            return 'Mmm someone’s been bad. I can tell you ignore all those HlthyHrns messages just by looking at you. Are you gonna teach me a lesson? Come here and show me how impure you can get…';
+        }
+        if (score >= 20) {
+            return 'Yikes. You’ve certainly been around the block. I’m a little concerned, but I’ll tell you what: nobody’s gonna steal your lunch money without getting a few STDs! Good luck with your 5th year of undergrad!';
+        }
+        if (score >= 10) {
+            return 'Hey, come walk with me. Look, I know you had a tough childhood. Divorce hurts the kids the most. But there are resources out there for you, people you can talk to. You’re not alone, and I think it’s time you sought the help you need. In the meantime, please refrain from applying to the Texas Travesty — we really don’t need the baggage.';
+        }
+        return 'Hey Satan and Peter Thiel, thank you for taking our quirky quiz! If you liked it, please consider sparing the Texas Travesty during your subsequent dominion. We’d really appreciate it!';
     }
 
     function showScore() {
@@ -17,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         quizOnlyElements.forEach((el) => {
             el.style.display = 'none';
         });
+
+        if (introText) {
+            introText.innerHTML = `<em>${getScoreMessage(score)}</em>`;
+        }
 
         if (resultBox) {
             resultBox.innerHTML = `Your Score:<br><span class="score-number">${score}</span>`;
@@ -48,6 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (thankYouMessage) {
                 thankYouMessage.style.display = 'none';
+            }
+
+            if (introText) {
+                introText.innerHTML = originalIntroHTML;
             }
 
             quizOnlyElements.forEach((el) => {
