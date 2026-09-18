@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return 'Awwww look at you. You’re so cute! Between your two-parent household and your religious background, you’ve really maintained a purity like nobody else. Good luck with the next Papal election!';
         }
         if (score >= 73) {
-            return 'You’re not a very fun hang, but that’s okay. Everybody still wants you around because you have a steady presence and a submissive attitude. I just know you’d be dropping that soap on purpose in prison!';
+            return 'You’re not a very fun hang, but that’s okay. Everybody still wants you around because you have a steady presence and a submissive attitude. Remember to assert yourself a little bit next time: when you see a car, yell shotgun! When you want gross-ass Chipotle instead of Cabo, stand your ground. You’re a flower yet bloomed, my child.';
         }
         if (score >= 50) {
             return 'A perfectly quaint score! Your angel and devil are always fighting, and after dying you will certainly go to purgatory. Nothing is particularly special about you, except for your mixed political opinions.';
@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (introText) {
-            introText.innerHTML = `<em>${getScoreMessage(score)}</em>`;
+            introText.innerHTML = getScoreMessage(score);
+            introText.classList.add('score-message');
         }
 
         if (resultBox) {
@@ -80,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (introText) {
                 introText.innerHTML = originalIntroHTML;
+                introText.classList.remove('score-message');
             }
 
             quizOnlyElements.forEach((el) => {

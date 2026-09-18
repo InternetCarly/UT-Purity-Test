@@ -45,6 +45,16 @@ p {
     color: #222;
 }
 
+.intro-text.score-message {
+    max-width: 640px;
+    margin: 20px auto 0;
+    padding: 20px 24px;
+    border: 1px solid #d8c39a;
+    background: #fff8ec;
+    border-radius: 6px;
+    text-align: left;
+}
+
 .instruction-line {
     margin-top: 8px;
     margin-bottom: 18px;
@@ -69,10 +79,10 @@ li {
 }
 
 input[type="checkbox"] {
-    width: 1.2em;
-    height: 1.2em;
-    margin-right: 8px;
-    transform: translateY(3px);
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 6px;
+    transform: translateY(4px);
 }
 
 label {
